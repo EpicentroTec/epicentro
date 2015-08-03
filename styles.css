@@ -287,4 +287,73 @@ h2 {
     width: 60px;
     height: 60px;
   }
+}/*
+- Titulo "PORTFÓLIO", com a fonte #9 da cor branca;
+- Faixa de cor #8a2f30 com 100% de largura e 100px de altura;
+- Bloco com o fundo branco e o desenho do logo do Epicentro no fundo alinhado a direita com 1000x1000 de tamanho;
+- Imagem de um notebook com 1289x660 de tamanho, contendo a imagem de x sites;
+- Dentro do notebook um menu no topo contendo X links de sites;
+- Bloco com a altura de 1142px
+
+- Titulos (serviços,portifólio,equipe e contato) 
+- Alegreya Sans SC, 50px;
+*/
+
+.portfolio {
+  background-color: #fff;
+  background-image: url('assets/img/Portfolio/Container/logo-desenho.png');
+  background-repeat: no-repeat;
+  background-position: 95% -10%;
+  height: 1142px;
+  border: 1px solid #000;
+}
+
+.portfolio h1 {
+  background-color: rgba(138, 47, 48, 0.9);
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px; 
+}
+
+.portfolio .laptop {
+  border: 1px solid #000;
+  width: 1289px;
+  height: 660px;
+  margin: 100px auto;
+  background-image: url('assets/img/Portfolio/Container/notebook.png');
+  background-size: 100% 100%;
+}
+
+.portfolio .ancoraSite {
+  height: 100px;
+  width: 800px;
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+.portfolio .ancoraSite ul {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio .ancoraSite ul li {
+  display: inline-block;
+  width: 7vw;
+  height: 100%;
+  border-radius: 100px;
+  background-color: #aaa;
+  margin: 0 3%;
+}
+
+.portfolio .site {
+  display: block;
+  width: 990px;
+  height: 425px;
+  border: 1px solid #fff;
+  margin: auto;
 }
