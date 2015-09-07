@@ -170,6 +170,7 @@ h2 {
 
   .jumbotron .banner ul li .frase {
     width: 100%;
+    padding: 50px;
     top: 20%;
   }
 
@@ -1105,6 +1106,14 @@ h2 {
   z-index: 2;
 }
 
+.section.contato #iframe,
+.section.contato #ifr_mapa {
+  -moz-transition: visibility 1s, display 1s;
+  -webkit-transition: visibility 1s, display 1s;
+  -o-transition: visibility 1s, display 1s;
+  transition: visibility 1s, display 1s;
+}
+
 .section.contato #formul {
   -moz-transition: top 1s;
   -webkit-transition: top 1s;
@@ -1114,8 +1123,7 @@ h2 {
 
 .section.contato #fechamapa {
   position: absolute;
-  top: calc(85% - -24px);
-  left: calc(50% - 35px);
+  left: 200px;
   z-index: 10;
   cursor: pointer;
   background-color: #c00;
@@ -1193,6 +1201,7 @@ h2 {
 }
 
 .section.contato .map-modal .fechar {
+  position: absolute;
   background-color: #c00;
   border-radius: 5px;
   color: #fff;
@@ -1210,7 +1219,7 @@ h2 {
   width: 100%;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -30px;
   z-index: 1;
 }
 

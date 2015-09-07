@@ -6,25 +6,21 @@ function hidemap() {
   var e = document.getElementById('fechamapa');
   var f = document.getElementById('formul');
 
-  var modulo = document.getElementsByClassName('contato')[0];
-  var titulo = document.getElementsByClassName('contato')[0].getElementsByTagName('h1')[0];
-
-  modulo.style.paddingTop = '30px';
-  titulo.style.marginTop = '.65em';
-  
   var browser = navigator.appName;
   
   c.style.visibility = "hidden";
   c.style.display = "none";
   d.style.visibility = "hidden";
   d.style.display = "none";
+  e.style.top = "176px";
   e.innerHTML = "<a class='close' onclick='showmap()'>Exibir mapa</a>";
   var nav = detect();
   if (nav == "Chrome")
   {
+    scroll(70);
     f.style.visibility = "initial";
-    var g = document.getElementsByClassName('menu full');
-    g.style.visibility = "initial";
+    var h = document.getElementById('topless');
+    h.style.marginTop = "40px";
   }
   else
     f.style.top = "0";
@@ -36,13 +32,13 @@ function showmap() {
   var e = document.getElementById('fechamapa');
   var f = document.getElementById('formul');
 
-  var modulo = document.getElementsByClassName('contato')[0];
-  var titulo = document.getElementsByClassName('contato')[0].getElementsByTagName('h1')[0];
+//  var modulo = document.getElementsByClassName('contato')[0];
+//  var titulo = document.getElementsByClassName('contato')[0].getElementsByTagName('h1')[0];
 
-  var browser = navigator.appName;
+//  var browser = navigator.appName;
 
-  modulo.style.paddingTop = 0;
-  titulo.style.marginTop = 0;
+//  modulo.style.paddingTop = 0;
+//  titulo.style.marginTop = 0;
   
   c.style.visibility = "visible";
   c.style.display = "initial";
@@ -53,13 +49,18 @@ function showmap() {
   var nav = detect();
   if (nav == "Chrome")
   {
-    scroll();
+    scroll(-70);
+    e.style.top = "106px";
     f.style.visibility = "hidden";
-    var g = document.getElementsByClassName('menu full');
-    g.style.visibility = "initial";
+    var g = document.getElementById('topless');
+    g.style.marginTop = "-30px";
   }
   else
-    f.style.top = "60%";
+  {
+    f.style.top = "55%";
+    var g = document.getElementsByClassName('mapa')[0];
+    g.style.top = "33px";
+  }
 }
 
 function detect () {
@@ -81,6 +82,6 @@ function detect () {
     return "Explorer";
 }
 
-function scroll() {
-    window.scrollBy(0, -70);
+function scroll(pixels) {
+    window.scrollBy(0, pixels);
 }

@@ -1,21 +1,21 @@
 <header class="jumbotron" id="topo">
   <h1 class="hidden">Epicentro Tecnologia</h1>
   <?php include 'modules/menu/index.html' ?>
-  <div class="banner">
-    <ul>
+  <div class="banner slider">
+    <ul class="image-list">
       <li style="background-image: url('assets/img/Jumbotron/jumbotron1.jpg')">
         <div class="frase">
-          <p>A Epicentro Tecnologia desenvolve <br>soluções em páginas web, <br>sistemas de gerenciamento de<br> conteúdo e design gráfico</p>
+          <p>A Epicentro Tecnologia desenvolve sistemas e páginas Internet e Intranet, sistemas de gerenciamento de conteúdo, <em>web design</em> e <em>design </em>gráfico</p>
         </div>
       </li>
       <li style="background-image: url('assets/img/Jumbotron/jumbotron2.jpg')">
         <div class="frase">
-          <p>Sites 100% responsivos, <br>administração intuitiva com WordPress, <br>integração com redes sociais <br>e otimização para o Google</p>
+          <p><em>Sites </em>totalmente ajustáveis para qualquer dispositivo, sistemas intuitivos para gerenciamento de conteúdo, integração e campanhas em redes sociais e otimização para o mecanismos de busca</p>
         </div>
       </li>
       <li style="background-image: url('assets/img/Jumbotron/jumbotron3.jpg')">
         <div class="frase">
-          <p>Produzimos seu projeto <br>do design ao conteúdo, <br>personalizado para as suas necessidades e <br>focado na obtenção de resultados</p>
+          <p>Produzimos seu projeto do <em>design </em>ao conteúdo, da arquitetura da informação à identidade gráfica, totalmente personalizado para as suas necessidades, focado na obtenção dos melhores resultados </p>
         </div>
       </li>
     </ul>
