@@ -10,12 +10,12 @@
       </li>
       <li class="segunda">
         <div class="frase">
-          <p><em>Sites </em>totalmente ajustáveis para qualquer dispositivo, sistemas intuitivos para gerenciamento de conteúdo, integração e campanhas em redes sociais e otimização para o mecanismos de busca</p>
+          <p><em>Sites </em>totalmente ajustáveis para qualquer dispositivo, sistemas intuitivos para gerenciamento de conteúdo (CMS), integração e campanhas em redes sociais e otimização para o mecanismos de busca (SEO)</p>
         </div>
       </li>
       <li class="terceira">
         <div class="frase">
-          <p>Produzimos seu projeto do <em>design </em>ao conteúdo, da arquitetura da informação à identidade gráfica, totalmente personalizado para as suas necessidades, focado na obtenção dos melhores resultados </p>
+          <p>Desenvolvemos seu projeto do <em>design </em>ao conteúdo, da arquitetura da informação à identidade gráfica, totalmente personalizado para as suas necessidades, focados na obtenção dos melhores resultados </p>
         </div>
       </li>
     </ul>
