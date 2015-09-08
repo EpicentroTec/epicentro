@@ -165,8 +165,6 @@ function hidemap() {
   var e = document.getElementById('fechamapa');
   var f = document.getElementById('formul');
 
-  var browser = navigator.appName;
-  
   c.style.visibility = "hidden";
   c.style.display = "none";
   d.style.visibility = "hidden";
@@ -191,14 +189,6 @@ function showmap() {
   var e = document.getElementById('fechamapa');
   var f = document.getElementById('formul');
 
-//  var modulo = document.getElementsByClassName('contato')[0];
-//  var titulo = document.getElementsByClassName('contato')[0].getElementsByTagName('h1')[0];
-
-//  var browser = navigator.appName;
-
-//  modulo.style.paddingTop = 0;
-//  titulo.style.marginTop = 0;
-  
   c.style.visibility = "visible";
   c.style.display = "initial";
   d.style.visibility = "visible";
