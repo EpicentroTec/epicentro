@@ -38,7 +38,7 @@
     $ins = "INSERT INTO contato (nome, email, assunto, mensagem) VALUES (
             \"" . $nome . "\", \"" . $email . "\", \"" . $assunto . "\", \"" . $mensagem . "\"
             )";
-    mysql_query($ins,$con) or die("Erro ao enviar mensagem" . $ins);
+    mysql_query($ins,$con) or die("Erro ao enviar mensagem. Verifique a conexão com o banco de dados.");
     unset($_POST);
     ?>
     <script>
