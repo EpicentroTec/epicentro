@@ -21,9 +21,9 @@ if ($('.jumbotron.mobile').length > 0) {
 
   $('.jumbotron.mobile .banner').remove();
 
-  $('.jumbotron.mobile .menu').after('<div class="banner"><ul><li class="jumbo-bg"><div class="frase"><p>A Epicentro Tecnologia desenvolve <br>soluções em páginas web, <br>sistemas de gerenciamento de<br> conteúdo e design gráfico</p></div></li></ul></div>');
+  $('.jumbotron.mobile .menu').after('<div class="banner"><ul><li class="jumbo-bg"><div class="frase"><p>A Epicentro Tecnologia desenvolve sistemas e páginas Internet e Intranet, sistemas de gerenciamento de conteúdo, <em>web design</em> e <em>design </em>gráfico</p></div></li></ul></div>');
 
-  $('.jumbo-bg').css('background-image','url("assets/img/Jumbotron/jumbotron'+Math.floor((Math.random() * numeroDeImagens) + 1)+'800.jpg")');
+  $('.jumbo-bg').css('background-image','url("assets/img/Jumbotron/jumbotron'+Math.floor((Math.random() * numeroDeImagens) + 1)+'640.jpg")');
 }
 
 

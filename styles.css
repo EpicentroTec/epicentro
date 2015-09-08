@@ -359,6 +359,7 @@ h2 {
   color: #fff;
   font-family: 'AlegreyaSans';
   position: relative;
+  top: 20%;
 }
 
 .jumbotron .banner ul li {
@@ -432,18 +433,18 @@ h2 {
   }
 
   .jumbotron .banner ul li .frase p {
-    font-size: 2vw;
+    font-size: 5vw;
     letter-spacing: 1px;
   }
 
-.jumbotron .banner .frase {
-  font-size: 1.5vw;
-  letter-spacing: 2px;
-}
+  .jumbotron .banner .frase {
+    font-size: 1.5vw;
+    letter-spacing: 2px;
+  }
 
-.jumbotron .banner ul li.jumbo-bg {
-  width: 100%;
-}
+  .jumbotron .banner ul li.jumbo-bg {
+    width: 100%;
+  }
 
 @media screen and (min-width: 601px) {
 
@@ -455,9 +456,9 @@ h2 {
     height: 70vw;
   }
 
-  .jumbotron .banner .frase {
-    font-size: 1.5vw;
-    letter-spacing: 4px;
+  .jumbotron .banner ul li .frase p {
+    font-size: 3vw;
+    letter-spacing: 1px;
   }
 }
 
@@ -467,9 +468,9 @@ h2 {
     height: 100vh;
   }
 
-  .jumbotron .banner .frase {
-    font-size: 1vw;
-    letter-spacing: 4px;
+  .jumbotron .banner ul li .frase p {
+    font-size: 3vw;
+    letter-spacing: 2px;
   }
 }
 
@@ -479,9 +480,9 @@ h2 {
     height: 100vh;
   }
 
-  .jumbotron .banner .frase {
-    font-size: 1vw;
-    letter-spacing: 4px;
+  .jumbotron .banner ul li .frase p {
+    font-size: 3.5vw;
+    letter-spacing: 1px;
   }
 }
 /*------------- CSS Menu -------------------*/

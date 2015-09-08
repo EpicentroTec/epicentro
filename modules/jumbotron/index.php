@@ -10,7 +10,7 @@
       </li>
       <li class="segunda">
         <div class="frase">
-          <p><em>Sites </em>totalmente ajustáveis para qualquer dispositivo, sistemas intuitivos para gerenciamento de conteúdo (CMS), integração e campanhas em redes sociais e otimização para o mecanismos de busca (SEO)</p>
+          <p><em>Sites </em>totalmente ajustáveis para qualquer dispositivo, sistemas intuitivos para gerenciamento de conteúdo (CMS), integração e campanhas em redes sociais e otimização para mecanismos de busca (SEO)</p>
         </div>
       </li>
       <li class="terceira">
