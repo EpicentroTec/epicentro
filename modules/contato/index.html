@@ -1,18 +1,22 @@
 <section class="section contato" id="contato">
   <h1 class="topless">Contatos</h1>
   <div class="wrapper" id="formul">
-    <form class="form">
+    <form class="form" action="?acao=enviar">
       <label>
-        <span class="titulo">Nome:</span><input class="input" type="text">
+        <span class="titulo">Nome:</span>
+        <input class="input" type="text" required title="Nome e sobrenome">
       </label>
       <label>
-        <span class="titulo">Email:</span><input class="input" type="email">
+        <span class="titulo">Email:</span>
+        <input class="input" type="email" required title="Um e-mail para receber nosso retorno">
       </label>
       <label>
-        <span>Assunto:</span><br><input class="full" type="text">
+        <span>Assunto:</span><br>
+        <input class="full" type="text" required title="Um título sobre sua mensagem">
       </label>
       <label>
-        <span>Mensagem</span><textarea></textarea>
+        <span>Mensagem</span>
+        <textarea required title="Digite a sua mensagem"></textarea>
       </label>
       <input class="enviar" type="submit" value="enviar">
     </form>

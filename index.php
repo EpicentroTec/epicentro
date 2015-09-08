@@ -61,7 +61,7 @@
     <?php include 'modules/portfolio/index.html' ?>
     <?php include 'modules/frases/index.html' ?>
     <?php include 'modules/equipe/index.html' ?>
-    <?php include 'modules/contato/index.html' ?>
+    <?php include 'modules/contato/index.php' ?>
     <?php include 'modules/footer/index.html' ?>
   </main>
 </body>
