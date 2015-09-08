@@ -1,32 +1,28 @@
 <section class="section contato" id="contato">
-  <h1 id="topless">Contatos</h1>
-  <form class="form">
-    <label>
-      <span class="titulo">Nome:</span>
-      <input class="input" type="text" required title="Nome e sobrenome">
-    </label>
-    <label>
-      <span class="titulo">Email:</span>
-      <input class="input" type="email" required title="Um e-mail para receber nosso retorno">
-    </label>
-    <label>
-      <span>Assunto:</span><br>
-      <input class="full" type="text" required title="Um título sobre sua mensagem">
-    </label>
-    <label>
-      <span>Mensagem</span>
-      <textarea required title="Digite a sua mensagem"></textarea>
-    </label>
-    <input class="enviar" type="submit" value="enviar">
-    <button type="button" class="abre-mapa" title="Veja o mapa e saiba onde nos encontrar!">Abrir mapa</button>
-  </form>
-  <span class="fechar" id="fechamapa"><a class="close" onclick="hidemap()">Fechar mapa</a></span>
+  <h1 class="topless">Contatos</h1>
+  <div class="wrapper" id="formul">
+    <form class="form">
+      <label>
+        <span class="titulo">Nome:</span><input class="input" type="text">
+      </label>
+      <label>
+        <span class="titulo">Email:</span><input class="input" type="email">
+      </label>
+      <label>
+        <span>Assunto:</span><br><input class="full" type="text">
+      </label>
+      <label>
+        <span>Mensagem</span><textarea></textarea>
+      </label>
+      <input class="enviar" type="submit" value="enviar">
+    </form>
+  </div>
+  
+  <div class="fechar" id="fechamapa"><a class="close" onclick="hidemap()">Fechar mapa</a></div>
   
   <div class="map-modal" onclick="showmap()">
     <div class="map-wrapper" id="iframe">
       <iframe id="ifr_mapa" class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.768779427074!2d-45.07420856245732!3d-23.432718272002823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cd522086951abb%3A0x90160a09e57afc85!2sCondom%C3%ADnio+Waldomiro+Ernica+-+R.+Dr.+Esteves+da+Silva%2C+147+-+Centro%2C+Ubatuba+-+SP%2C+11680-000!5e0!3m2!1spt-BR!2sbr!4v1438948062883" frameborder="1" style="border:0" allowfullscreen></iframe>
-      <button type="button" class="fecha-mapa" title="Volte para o formulário e nos envie uma mensagem!">Fechar mapa</button>
     </div>
   </div>
 </section>
-

@@ -12,14 +12,10 @@ function hidemap() {
   d.style.display = "none";
   e.style.top = "176px";
   e.innerHTML = "<a class='close' onclick='showmap()'>Exibir mapa</a>";
+  
   var nav = detect();
   if (nav == "Chrome")
-  {
-    scroll(70);
     f.style.visibility = "initial";
-    var h = document.getElementById('topless');
-    h.style.marginTop = "40px";
-  }
   else
     f.style.top = "0";
 }
@@ -38,19 +34,9 @@ function showmap() {
 
   var nav = detect();
   if (nav == "Chrome")
-  {
-    scroll(-70);
-    e.style.top = "106px";
     f.style.visibility = "hidden";
-    var g = document.getElementById('topless');
-    g.style.marginTop = "-30px";
-  }
   else
-  {
     f.style.top = "55%";
-    var g = document.getElementsByClassName('mapa')[0];
-    g.style.top = "33px";
-  }
 }
 
 function detect () {

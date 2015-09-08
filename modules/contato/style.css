@@ -4,11 +4,10 @@
 
 .section.contato {
   background: url('assets/img/Contatos/background.png');
-  background-size: cover;
   background-attachment: fixed;
   background-position: center;
   font-family: 'AlegreyaSC';
-  height: 660px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -36,17 +35,9 @@
   padding: 1em;
   position: relative;
   top: 30px;
-  margin: 0 auto;
+  margin-left: 10px;
   width: calc(100% - 2em);
   z-index: 2;
-}
-
-.section.contato #iframe,
-.section.contato #ifr_mapa {
-  -moz-transition: visibility 1s, display 1s;
-  -webkit-transition: visibility 1s, display 1s;
-  -o-transition: visibility 1s, display 1s;
-  transition: visibility 1s, display 1s;
 }
 
 .section.contato #formul {
@@ -54,24 +45,6 @@
   -webkit-transition: top 1s;
   -o-transition: top 1s;
   transition: top 1s;
-}
-
-.section.contato #fechamapa {
-  position: absolute;
-  left: 200px;
-  z-index: 10;
-  cursor: pointer;
-  background-color: #c00;
-  border: 0;
-  border-radius: 5px;
-  color: #fff;
-  float: right;
-  cursor: pointer;
-  font: 1em 'AlegreyaSC';
-  font-weight: bold;
-  padding: .5em 1em;
-  letter-spacing: 1px;
-  margin-left: 15px
 }
 
 .section.contato .form .full {
@@ -118,27 +91,31 @@
 }
 
 .section.contato .map-modal {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  height: 550px;
+  width: 1000px;
+  left: 50%;
+  top: 143px;
+  margin-left: -500px;
   cursor: pointer;
-  display: none;
-  height: 460px;
-  margin: 0 auto;
-  max-width: 1000px;
-  position: relative;
-  top: 30px;
 }
 
-.section.contato .map-modal .fechar {
+.section.contato .fechar {
   position: absolute;
+  left: 50%;
+  z-index: 10;
+  cursor: pointer;
+  text-align: center;
   background-color: #c00;
   border-radius: 5px;
   color: #fff;
-  cursor: pointer;
+  font: 1em 'AlegreyaSC';
   font-weight: bold;
-  padding: 10px 15px;
-  position: absolute;
-  bottom: 15px;
-  right: calc(50% - 50px);
-  z-index: 4;
+  padding: 5px;
+  letter-spacing: 1px;
+  width: 100px;
+  margin-left: 160px;
 }
 
 .section.contato .map-modal .mapa {
@@ -146,8 +123,8 @@
   width: 100%;
   position: absolute;
   left: 0;
-  top: -30px;
   z-index: 1;
+  top: 0;
 }
 
 @media screen and (min-width: 601px) {
@@ -157,6 +134,12 @@
 
   .section.contato .form textarea {
     min-height: 100px;
+  }
+  
+  .section.contato .fechar {
+    width: 80px;
+    left: 50%;
+    margin-left: 420px;
   }
 }
 
@@ -169,15 +152,16 @@
   }
 
   .section.contato .form {
-    top: 196px;
-    left: calc(50vw - 500px);
+    top: 130px;
+    top: 130px;
+    left: 0;
     position: absolute;
-    width: 400px;
+    width: 25vw;
   }
   
-  .section.contato .map-modal .fecha-mapa {
-    bottom: inherit;
-    right: 15px;
-    top: 60px;
+  .section.contato .fechar {
+    top: 200px;
+    left: 50%;
+    margin-left: 380px;
   }
 }
