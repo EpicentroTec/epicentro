@@ -5,7 +5,7 @@
   color: #fff;
   font-family: 'AlegreyaSans';
   position: relative;
-  top: 20%;
+  top: 0;
 }
 
 .jumbotron .banner ul li {
@@ -68,14 +68,14 @@
   height: 100vw;
 }
 
-  .jumbotron {
+  /*.jumbotron {
     margin-top: 70px;
-  }
+  }*/
 
   .jumbotron .banner ul li .frase {
     width: 100%;
     padding: 50px;
-    top: 20%;
+    top: 30%;
   }
 
   .jumbotron .banner ul li .frase p {
@@ -102,6 +102,10 @@
     height: 70vw;
   }
 
+  .jumbotron .banner ul li .frase {
+    top: calc(40% - 30px);
+  }
+
   .jumbotron .banner ul li .frase p {
     font-size: 3vw;
     letter-spacing: 1px;
@@ -112,6 +116,10 @@
 
   .jumbotron .banner ul li {
     height: 100vh;
+  }
+
+  .jumbotron .banner ul li .frase {
+    top: calc(40% - 30px);
   }
 
   .jumbotron .banner ul li .frase p {
@@ -126,8 +134,12 @@
     height: 100vh;
   }
 
+  .jumbotron .banner ul li .frase {
+    top: calc(40% - 30px);
+  }
+
   .jumbotron .banner ul li .frase p {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
     letter-spacing: 1px;
   }
 }
