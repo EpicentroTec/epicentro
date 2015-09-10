@@ -108,43 +108,43 @@
   height: 370px;
 }
 
-.section.portfolio ul li:nth-child(1) {
+.section.portfolio ul a:nth-child(2) li {
   background-image: url('assets/img/Portfolio/iconeAvante.png');
 }
 
-.section.portfolio ul li:nth-child(2) {
+.section.portfolio ul a:nth-child(3) li {
   background-image: url('assets/img/Portfolio/iconeDomus.png');
 }
 
-.section.portfolio ul li:nth-child(3) {
+.section.portfolio ul a:nth-child(4) li {
   background-image: url('assets/img/Portfolio/iconePizzaria.png');
 }
 
-.section.portfolio ul li:nth-child(4) {
+.section.portfolio ul a:nth-child(5) li {
   background-image: url('assets/img/Portfolio/iconeDescubra.png');
 }
 
-.section.portfolio ul li:nth-child(5) {
+.section.portfolio ul a:nth-child(6) li {
   background-image: url('assets/img/Portfolio/iconeVilago.jpg');
 }
 
-.section.portfolio ul li:nth-child(6) {
+.section.portfolio ul a:nth-child(7) li {
   background-image: url('assets/img/Portfolio/iconeRaddar.jpg');
 }
 
-.section.portfolio ul li:nth-child(7) {
+.section.portfolio ul a:nth-child(8) li {
   background-image: url('assets/img/Portfolio/iconeMaca.png');
 }
 
-.section.portfolio ul li:nth-child(8) {
+.section.portfolio ul a:nth-child(9) li {
   background-image: url('assets/img/Portfolio/iconePapillon.jpg');
 }
 
-.section.portfolio ul li:nth-child(9) {
+.section.portfolio ul a:nth-child(10) li {
   background-image: url('assets/img/Portfolio/iconePrevent.jpg');
 }
 
-.section.portfolio ul li:nth-child(10) {
+.section.portfolio ul a:nth-child(11) li {
   background-image: url('assets/img/Portfolio/iconeApeve.jpg');
 }
 

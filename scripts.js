@@ -149,7 +149,7 @@ $(function() {
 
           $('.laptop-site').attr('src', 'assets/img/Portfolio/'+arg+'.jpg');
         });
-        
+
         $('.laptop-site').fadeIn();
       });
     }
@@ -164,6 +164,13 @@ $(function() {
     mostraImagem('papilon');
     mostraImagem('preventser');
     mostraImagem('apave');
+
+    $('.section.portfolio .laptop').click(function() {
+
+      console.log('foi-se');
+      $('.section.portfolio').top = 0;
+
+    });
 // Equipe
 
 function mostrarDescricao(arg) {
