@@ -359,7 +359,11 @@ h2 {
   color: #fff;
   font-family: 'AlegreyaSans';
   position: relative;
-  top: 20%;
+  top: 0;
+}
+
+.jumbotron .banner {
+  max-height: 100vh;
 }
 
 .jumbotron .banner ul li {
@@ -383,7 +387,8 @@ h2 {
 
 .jumbotron .banner .dots {
   bottom: 90px;
-  position: relative;
+  left: 0;
+  position: absolute;
   text-align: center;
   width: 100%;
 }
@@ -422,14 +427,10 @@ h2 {
   height: 100vw;
 }
 
-  .jumbotron {
-    margin-top: 70px;
-  }
-
   .jumbotron .banner ul li .frase {
     width: 100%;
     padding: 50px;
-    top: 20%;
+    top: 30%;
   }
 
   .jumbotron .banner ul li .frase p {
@@ -452,12 +453,12 @@ h2 {
     top: calc(50% - 30px);
   }
 
-  .jumbotron .banner ul li {
-    height: 70vw;
+  .jumbotron .banner ul li .frase {
+    top: calc(35% - 30px);
   }
 
   .jumbotron .banner ul li .frase p {
-    font-size: 3vw;
+    font-size: 4vw;
     letter-spacing: 1px;
   }
 }
@@ -466,6 +467,10 @@ h2 {
 
   .jumbotron .banner ul li {
     height: 100vh;
+  }
+
+  .jumbotron .banner ul li .frase {
+    top: calc(40% - 30px);
   }
 
   .jumbotron .banner ul li .frase p {
@@ -480,8 +485,12 @@ h2 {
     height: 100vh;
   }
 
+  .jumbotron .banner ul li .frase {
+    top: calc(40% - 30px);
+  }
+
   .jumbotron .banner ul li .frase p {
-    font-size: 3.5vw;
+    font-size: 2.5vw;
     letter-spacing: 1px;
   }
 }
@@ -828,7 +837,7 @@ h2 {
   width: 550px;
   height: 120px;
   margin-top: 0;
-  margin-left: calc(50% - 275px); 
+  margin-left: calc(50% - 275px);
   overflow: hidden;
 }
 
@@ -866,15 +875,21 @@ h2 {
 
 .section.portfolio ul li {
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 63px;
+  height: 63px;
   border-radius: 100px;
-  background-color: #aaa;  
+  background-color: #aaa;
   margin: 0 .2vw;
+  margin-bottom: 20px;
   box-shadow: 5px 5px 5px rgba(0,0,0,.5);
   background-size: cover;
   background-position: center;
   cursor: pointer;
+}
+
+.section.portfolio .laptop .nav-left,
+.section.portfolio .laptop .nav-right {
+  top: -110px;
 }
 
 .section.portfolio ul li:hover {
@@ -903,7 +918,7 @@ h2 {
   width: 730px;
   margin-top: 40px;
   left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
   border-radius: 10px;
 }
 
@@ -914,60 +929,71 @@ h2 {
   height: 370px;
 }
 
-.section.portfolio ul li:nth-child(1) {
+.section.portfolio ul a:nth-child(2) li {
   background-image: url('assets/img/Portfolio/iconeAvante.png');
 }
 
-.section.portfolio ul li:nth-child(2) {
+.section.portfolio ul a:nth-child(3) li {
   background-image: url('assets/img/Portfolio/iconeDomus.png');
 }
 
-.section.portfolio ul li:nth-child(3) {
+.section.portfolio ul a:nth-child(4) li {
   background-image: url('assets/img/Portfolio/iconePizzaria.png');
 }
 
-.section.portfolio ul li:nth-child(4) {
+.section.portfolio ul a:nth-child(5) li {
   background-image: url('assets/img/Portfolio/iconeDescubra.png');
 }
 
-.section.portfolio ul li:nth-child(5) {
+.section.portfolio ul a:nth-child(6) li {
   background-image: url('assets/img/Portfolio/iconeVilago.jpg');
 }
 
-.section.portfolio ul li:nth-child(6) {
+.section.portfolio ul a:nth-child(7) li {
   background-image: url('assets/img/Portfolio/iconeRaddar.jpg');
 }
 
-.section.portfolio ul li:nth-child(7) {
+.section.portfolio ul a:nth-child(8) li {
   background-image: url('assets/img/Portfolio/iconeMaca.png');
 }
 
-.section.portfolio ul li:nth-child(8) {
+.section.portfolio ul a:nth-child(9) li {
   background-image: url('assets/img/Portfolio/iconePapillon.jpg');
 }
 
-.section.portfolio ul li:nth-child(9) {
+.section.portfolio ul a:nth-child(10) li {
   background-image: url('assets/img/Portfolio/iconePrevent.jpg');
 }
 
-.section.portfolio ul li:nth-child(10) {
+.section.portfolio ul a:nth-child(11) li {
   background-image: url('assets/img/Portfolio/iconeApeve.jpg');
 }
 
 @media screen and (max-width: 1150px) {
   .section.portfolio .nav-left {
     left: 16vw;
-  } 
+  }
 
   .section.portfolio .nav-right {
     right: 16vw;
   }
-} 
+
+  .section.portfolio .laptop .nav-left,
+  .section.portfolio .laptop .nav-right {
+    top: -110px;
+  }
+
+  .section.portfolio ul li {
+    margin-bottom: 18px;
+    width: 63px;
+    height: 63px;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .section.portfolio .nav-left {
     left: 12vw;
-  } 
+  }
 
   .section.portfolio .nav-right {
     right: 12vw;
@@ -980,26 +1006,38 @@ h2 {
   .section.portfolio .laptop .siteFull {
     height: 340px;
   }
+
+  .section.portfolio .laptop .nav-left,
+  .section.portfolio .laptop .nav-right {
+    top: -110px;
+  }
+
+  .section.portfolio ul li {
+    margin-bottom: 18px;
+    width: 65px;
+    height: 65px;
+  }
 }
 
 @media screen and (max-width: 950px) {
 
   .section.portfolio .laptop .nav-left,
   .section.portfolio .laptop .nav-right {
-    top: -150px;
+    top: -110px;
   }
 
   .section.portfolio .nav-left {
     left: 0;
-  } 
+  }
 
   .section.portfolio .nav-right {
     right: 0;
   }
 
   .section.portfolio ul li {
-    width: 70px;
-    height: 70px;
+    margin-bottom: 23px;
+    width: 55px;
+    height: 55px;
   }
 
   .section.portfolio .laptop {
@@ -1027,16 +1065,15 @@ h2 {
   .section.portfolio .laptop .nav-left,
   .section.portfolio .laptop .nav-right {
     font-size: .7em;
+    top: -106px;
   }
 
   .section.portfolio .laptop .nav-left {
     left: 0;
-    top: -140px;
-  } 
+  }
 
   .section.portfolio .laptop .nav-right {
     right: -35px;
-    top: -140px;
   }
 
   .section.portfolio ul li {
@@ -1073,13 +1110,13 @@ h2 {
 
   .section.portfolio .laptop .nav-left,
   .section.portfolio .laptop .nav-right {
-    top: -115px;
+    top: -52px;
   }
 
   .section.portfolio .nav-left {
     left: 30px;
-    top: -120px;
-  } 
+    top: -62px;
+  }
 
   .section.portfolio .nav-right {
     right: -15px;
@@ -1087,8 +1124,8 @@ h2 {
   }
 
   .section.portfolio ul li {
-    width: 50px;
-    height: 50px;
+    width: 39px;
+    height: 39px;
     margin: 0 .1vw;
   }
 
@@ -1124,7 +1161,7 @@ h2 {
 
   .section.portfolio .laptop .nav-left,
   .section.portfolio .laptop .nav-right {
-    top: -115px;
+    top: -52px;
     width: auto;
   }
 
@@ -1159,7 +1196,8 @@ h2 {
   .section.portfolio .laptop .siteFull {
     height: 130px;
   }
-}/* Frase -------------------------------------------------------------------- */
+}
+/* Frase -------------------------------------------------------------------- */
 
 .section.frase {
   background-size: cover;
